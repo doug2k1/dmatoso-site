@@ -1,0 +1,10 @@
+@import 'vars';
+@import 'mixins';
+@import 'reset';
+
+@import 'components/nav';
+
+.main {
+  background-color: #fafafa;
+  height: 400px;
+}

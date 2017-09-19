@@ -4,21 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sass": "node-sass ./src/sass/main.scss ./src/assets/css/styles.css",
+    "prebuild": "npm run sass",
     "build": "node ./scripts/build",
     "build:prod": "NODE_ENV=production node ./scripts/build",
-    "serve": "serve ./public"
+    "watch": "chokidar ./src/sass -c 'npm run build'",
+    "serve": "live-server ./public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "chokidar-cli": "^1.2.0",
     "ejs": "^2.5.7",
     "front-matter": "^2.2.0",
     "fs-extra": "^4.0.2",
     "glob": "^7.1.2",
+    "live-server": "^1.2.0",
     "marked": "^0.3.6",
-    "serve": "^6.0.6",
+    "node-sass": "^4.5.3",
     "standard": "^10.0.3"
   }
 }

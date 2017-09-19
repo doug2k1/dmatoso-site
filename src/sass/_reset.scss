@@ -1,0 +1,17 @@
+@import 'vars';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  color: $text-color;
+  font-family: $base-font;
+  font-size: $base-font-size;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
