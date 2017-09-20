@@ -5,10 +5,10 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title><%= page.title ? `${page.title} | ` : '' %><%= site.title %></title>
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
-<body>
+<body class="<%= page.className %>">
   <header class="header">
     <nav class="nav">
       <div class="logo">
@@ -19,20 +19,17 @@
       </div>
       <div class="menu">
         <ul>
-          <li class="active"><a href="/"><span>Home</span></a></li>
-          <li><a href="/artigos"><span>Artigos</span></a></li>
-          <li><a href="/contato"><span>Contato</span></a></li>
+          <li class="menu-home"><a href="/"><span>Home</span></a></li>
+          <li class="menu-about"><a href="/sobre"><span>Sobre</span></a></li>
+          <li class="menu-articles"><a href="/artigos"><span>Artigos</span></a></li>
+          <li class="menu-contact"><a href="/contato"><span>Contato</span></a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main class="main">
-    <section class="promo-box">
-      <h1 class="title"><%- site.title.split(' ').join('<br>') %></h1>
-      <p class="subtitle"><%= site.subtitle %></p>
-      <img src="" alt="" class="picture">
-    </section>
+    <%- body %>
   </main>
 
   <footer class="footer">

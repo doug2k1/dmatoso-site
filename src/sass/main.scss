@@ -2,10 +2,6 @@
 @import 'mixins';
 @import 'reset';
 
+@import 'components/page';
 @import 'components/nav';
 @import 'components/promo-box';
-
-.main {
-  background-color: #fafafa;
-  height: 400px;
-}

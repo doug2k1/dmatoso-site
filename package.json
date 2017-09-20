@@ -8,7 +8,7 @@
     "prebuild": "npm run sass",
     "build": "node ./scripts/build",
     "build:prod": "NODE_ENV=production node ./scripts/build",
-    "watch": "chokidar ./src/sass -c 'npm run build'",
+    "watch": "chokidar ./src -i ./src/assets -c 'npm run build'",
     "serve": "live-server ./public"
   },
   "keywords": [],

@@ -1,0 +1,16 @@
+@import '../vars';
+
+.header {
+  border-bottom: 1px solid $gray-light;
+}
+
+.main {
+  padding: $spacing;
+}
+
+.page-title {
+  color: $primary-color;
+  font-size: 30px;
+  margin: 0 0 1em;
+  text-align: center;
+}

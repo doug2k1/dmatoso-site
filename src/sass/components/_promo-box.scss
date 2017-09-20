@@ -1,18 +1,23 @@
+@import '../vars';
+
 .promo-box {
+  background-color: $gray-lighter;
+  height: 400px;
+  margin: -$spacing;
   padding: $spacing;
 
   > .title {
-    color: #515769;
+    color: $primary-color;
     display: block;
     font-size: 70px;
     font-weight: bold;
     letter-spacing: -0.05em;
     line-height: 1;
-    margin-bottom: $spacing;
+    margin: 0 0 $spacing;
   }
 
   > .subtitle {
-    color: #a6a7aa;
+    color: $secondary-color;
     font-size: 25px;
   }
 
