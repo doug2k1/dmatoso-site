@@ -13,8 +13,8 @@
     <nav class="nav">
       <div class="logo">
         <a href="/">
-          <span class="title">Douglas Matoso</span>
-          <span class="subtitle">Web Developer</span>
+          <span class="title"><%= site.title %></span>
+          <span class="subtitle"><%= site.subtitle %></span>
         </a>
       </div>
       <div class="menu">
@@ -28,7 +28,11 @@
   </header>
 
   <main class="main">
-
+    <section class="promo-box">
+      <h1 class="title"><%- site.title.split(' ').join('<br>') %></h1>
+      <p class="subtitle"><%= site.subtitle %></p>
+      <img src="" alt="" class="picture">
+    </section>
   </main>
 
   <footer class="footer">

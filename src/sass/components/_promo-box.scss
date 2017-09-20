@@ -1,0 +1,22 @@
+.promo-box {
+  padding: $spacing;
+
+  > .title {
+    color: #515769;
+    display: block;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: $spacing;
+  }
+
+  > .subtitle {
+    color: #a6a7aa;
+    font-size: 25px;
+  }
+
+  > .picture {
+    display: none;
+  }
+}

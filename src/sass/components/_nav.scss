@@ -47,16 +47,16 @@
     text-transform: uppercase;
 
     &:hover span {
-      border-bottom: 3px solid #fafafa;
+      border-color: $gray-light;
     }
   }
   span {
-    border-color: #fff;
-    padding: 5px 0;
+    border-bottom: 3px solid transparent;
+    padding: 8px 0 5px;
     transition: border-color 500ms;
   }
 
   .active span {
-    border-bottom: 3px solid $secondary-color;
+    border-color: $secondary-color;
   }
 }

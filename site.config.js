@@ -2,8 +2,8 @@ const projects = require('./src/data/projects')
 
 module.exports = {
   site: {
-    title: 'NanoGen',
-    description: 'Micro Static Site Generator in Node.js',
+    title: 'Douglas Matoso',
+    subtitle: 'Web Developer',
     basePath: process.env.NODE_ENV === 'production' ? '/nanogen' : '',
     projects
   },
