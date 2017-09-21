@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass ./src/sass/main.scss ./src/assets/css/styles.css",
-    "prebuild": "npm run sass",
+    "sass": "node-sass ./src/sass/main.scss ./src/assets/css/styles.css --output-style compressed",
+    "cleancss": "cleancss -o ./src/assets/css/styles.css ./src/assets/css/styles.css",
+    "build:css": "npm run sass && npm run cleancss",
+    "prebuild": "npm run build:css",
     "build": "node ./scripts/build",
     "build:prod": "NODE_ENV=production node ./scripts/build",
     "watch": "chokidar ./src -i ./src/assets -c 'npm run build'",
@@ -17,6 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
+    "clean-css-cli": "^4.1.10",
     "ejs": "^2.5.7",
     "front-matter": "^2.2.0",
     "fs-extra": "^4.0.2",

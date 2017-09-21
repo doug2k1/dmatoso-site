@@ -1,0 +1,17 @@
+@import '../vars';
+
+.icon {
+  border-radius: 50%;
+  display: inline-block;
+  fill: $primary-color;
+  padding: 6px;
+  height: 33px;
+  width: 33px;
+
+  &:hover {
+    &.-twitter {
+      background-color: #1DA1F2;
+      fill: $gray-lighter;
+    }
+  }
+}

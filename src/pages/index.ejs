@@ -2,7 +2,19 @@
 className: page-home
 ---
 <section class="promo-box">
-  <h1 class="title"><%- site.title.split(' ').join('<br>') %></h1>
-  <p class="subtitle"><%= site.subtitle %></p>
-  <img src="" alt="" class="picture">
+  <div class="container">
+    <h1 class="title"><%- site.title.split(' ').join('<br>') %></h1>
+    <p class="subtitle"><%= site.subtitle %></p>
+    <img src="" alt="" class="picture">
+
+    <svg class="icon -twitter">
+      <use xlink:href="#icon-twitter"></use>
+    </svg>
+    <svg class="icon -github">
+      <use xlink:href="#icon-github"></use>
+    </svg>
+    <svg class="icon -linkedin">
+      <use xlink:href="#icon-linkedin"></use>
+    </svg>
+  </div>
 </section>

@@ -1,7 +1,18 @@
+// settings
 @import 'vars';
+
+// tools
 @import 'mixins';
+
+// generic, elements
 @import 'reset';
 
+// objects
+@import 'layout';
+
+// components
 @import 'components/page';
 @import 'components/nav';
 @import 'components/promo-box';
+@import 'components/icon';
+@import 'components/footer';
