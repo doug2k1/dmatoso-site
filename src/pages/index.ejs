@@ -7,14 +7,14 @@ className: page-home
     <p class="subtitle"><%= site.subtitle %></p>
     <img src="" alt="" class="picture">
 
-    <svg class="icon -twitter">
-      <use xlink:href="#icon-twitter"></use>
-    </svg>
-    <svg class="icon -github">
-      <use xlink:href="#icon-github"></use>
-    </svg>
-    <svg class="icon -linkedin">
-      <use xlink:href="#icon-linkedin"></use>
-    </svg>
+    <div class="social-links">
+      <% site.data.socialLinks.forEach((link) => { %>
+        <a class="link -<%= link.name.toLowerCase() %>" href="<%= link.url %>" title="<%= link.name %>">
+          <svg class="icon">
+            <use xlink:href="#icon-<%= link.name.toLowerCase() %>"></use>
+          </svg>
+        </a>
+      <% }) %>
+    </div>
   </div>
 </section>

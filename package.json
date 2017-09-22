@@ -10,7 +10,7 @@
     "prebuild": "npm run build:css",
     "build": "node ./scripts/build",
     "build:prod": "NODE_ENV=production node ./scripts/build",
-    "watch": "chokidar ./src -i ./src/assets -c 'npm run build'",
+    "watch": "chokidar './src' -i '/src\/assets/' -c 'npm run build'",
     "serve": "live-server ./public"
   },
   "keywords": [],

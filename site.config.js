@@ -1,11 +1,13 @@
-const projects = require('./src/data/projects')
+const socialLinks = require('./src/data/social-links')
 
 module.exports = {
   site: {
     title: 'Douglas Matoso',
     subtitle: 'Web Developer',
     basePath: process.env.NODE_ENV === 'production' ? '/nanogen' : '',
-    projects
+    data: {
+      socialLinks
+    }
   },
   build: {
     outputPath: process.env.NODE_ENV === 'production' ? './docs' : './public'

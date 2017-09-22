@@ -25,3 +25,38 @@
     display: none;
   }
 }
+
+.social-links {
+  > .link {
+    border-radius: 50%;
+    display: inline-block;
+    height: 36px;
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 36px;
+
+    &:hover {
+      > .icon {
+        fill: $gray-lighter;
+      }
+
+      &.-twitter {
+        background-color: #1DA1F2;
+      }
+
+      &.-github {
+        background-color: #24292E;
+      }
+
+      &.-linkedin {
+        background-color: #0076B7;
+      }
+    }
+  }
+  .icon {
+    fill: $primary-color;
+    height: 24px;
+    width: 24px;
+  }
+}
